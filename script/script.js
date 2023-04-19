@@ -153,5 +153,55 @@
                 });
               }
 
+
+$("#type_delivery_location").click(function () {
+  $("#type_delevery_address").css("display", "block");
+  $("#toggle_tick_icon").css("display", "block");
+  $("#toggle_truck_icon").css("display", "none");
+  $("#type_delivery_location").css("background", "#0F994B");
+  $("#toggle_tick_icon").css("color", "#ffffff");
+  $("#toggle_delivery_text_color").css("color", "#ffffff");
+
+
+  $("#select_pickup_location").css("background", "unset");
+  $("#toggle_pickup_text_color").css("color", "#000000");
+
+  $("#toggle_location_icon").css("display", "block");
+  $("#toggle_location_tick_icon").css("display", "none");
+
+  $("#type_pickup_detail_address").css("display", "none");
+  $("#check_out_pick_up_location_selector").css("display", "none");
+
+});
+
+$("#select_pickup_location").click(function () {
+  $("#type_delevery_address").css("display", "none");
+  $("#toggle_tick_icon").css("display", "none");
+  $("#toggle_truck_icon").css("display", "block");
+  $("#toggle_tick_icon").css("display", "none");
+
+  $("#select_pickup_location").css("background", "#0F994B");
+  $("#toggle_location_tick_icon").css("color", "#ffffff");
+  $("#toggle_pickup_text_color").css("color", "#ffffff");
+
+
+  $("#type_delivery_location").css("background", "unset");
+  $("#toggle_delivery_text_color").css("color", "#000000");
+  
+  $("#toggle_location_icon").css("display", "none");
+  $("#toggle_location_tick_icon").css("display", "block");
+
+  $("#type_pickup_detail_address").css("display", "block");
+  $("#check_out_pick_up_location_selector").css("display", "flex");
+});
+
+$("#click_to_add_coupon").click(function () {
+  $("#checkout_page_coupon_form").css("display", "block");
+  
+});
+
+
+
+
         }); 
       
