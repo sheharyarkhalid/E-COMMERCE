@@ -1563,7 +1563,33 @@ color: #343434 !important;
 .application_download_links_1 a:first-child {
   margin-bottom: 16px;
 }
-
+.footer_disclamer {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+}
+.footer_disclamer p {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #343434 !important;
+}
+.footer_disclamer p strong {
+  margin: 0px !important;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #343434;
+  padding-bottom: 10px;
+}
         @media(max-width: 1024px) {
             .footer-data-box {
               grid-template-columns: 1.4fr 1.5fr 1.2fr;
@@ -1801,7 +1827,9 @@ color: #343434 !important;
     position: relative;
     }
     .page_title_section img{
-    width: 100%;
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
 }
  .page_title_main{
 display: flex;
@@ -1840,8 +1868,20 @@ line-height: 22px;
 color: rgba(255, 255, 255, 0.8);
 padding-top:8px;
 }
-
+@media(max-width:1024px){
+.page_title_section img {
+  height: 240px;
+}
+}
+@media(max-width:1024px){
+  .page_title_section img {
+    height: 180px;
+  }
+  }
 @media(max-width:540px){
+  .page_title_section img {
+    height: 140px;
+}
  .page_title_main .page_title h2 {
     font-size: 28px !important;
 }
